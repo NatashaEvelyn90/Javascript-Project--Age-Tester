@@ -1,0 +1,44 @@
+.turkOne {
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 27%;
+    left: 68%;
+    animation-name: fadeIn;
+    
+}
+
+@keyframes fadeIn {
+    0% {
+  opacity:1;
+}
+45% {
+opacity:1;
+}
+55% {
+opacity:0;
+}
+100% {
+opacity:0;
+}
+}
+
+.turkTwo {
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 25%;
+    left: 66%;
+}
+
+.turkThree {
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 23%;
+    left: 65%;
+}
+
+.turkFour {
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 27%;
+    left: 65%;
+}
