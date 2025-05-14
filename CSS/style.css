@@ -4,22 +4,36 @@
     top: 27%;
     left: 68%;
     animation-name: fadeIn;
+    opacity: 0;
+    /* display: none; */
+    animation: fadeIn 2s ease-in forwards;
+    animation-name: fadeOut;
+    transition: opacity 2s ease-out forwards;
     
 }
 
+
 @keyframes fadeIn {
+   0% {
+    opacity: 0;
+    /* display: none; */
+    }
+
+   100% {
+    opacity: 1;
+    /* display: block; */
+    }
+}
+
+@keyframes fadeOut {
     0% {
-  opacity:1;
-}
-45% {
-opacity:1;
-}
-55% {
-opacity:0;
-}
-100% {
-opacity:0;
-}
+        opacity: 1;
+        /* display: block; */
+        }
+    100% {
+        opacity: 0;
+        /* display: none; */
+        }
 }
 
 .turkTwo {
