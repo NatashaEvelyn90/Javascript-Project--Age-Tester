@@ -9,34 +9,49 @@
     <title>Recruiting Now</title>
 </head>
 <body>
-    <div class="turkFour">
-        <img src="./Media/Tseng.png" alt="">
-    </div>
-    <div class="turkThree">
-        <img src="./Media/Elena.png" alt="">
-    </div>
-    <div class="turkTwo">
-        <img src="./Media/Rude.png" alt="">
-    </div>
-    <div class="turkOne animate_animataed animate__fadeIn animate_delay-3s">
-        <img src="./Media/Reno.png" alt="" class="img-fluid float-end">
-    </div>
-    <header>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>About</li>
-                <li>Contact</li>
+    <header class="">
+        <nav class="">
+            <ul class="d-flex flex-wrap d-block p-3 m-0 text-center fs-3 fw-bold">
+                <li class="col-4">Home</li>
+                <li class="col-4">About</li>
+                <li class="col-4">Contact</li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Do you have what it takes to join the Turks?</h1>
-        <img src="./Media/Shinra_Electric_Power_Company_logo_from_Final_Fantasy_VII_Remake.webp" alt="Shinra Power Company logo" class="rounded float-start" height="200" width="200">
+        <section class="turkSection">
+            <div class="d-flex">
+                <div class="signUp d-flex flex-wrap">
+                    <h1 class="title col-12 col-sm-12 text-center">Do you have what it takes to join the Turks?</h1>
+                    <p class="promo col-12 col-sm-12 text-center">"A special Shinra task force often saddled with atypical assignments, such as scouting for SOLDIER recruits, escorting important individuals, spy work and assassination. The Turks keep to the company's ever-growing shadow, performing deeds best kept out of the public eye." If you are truly ready to take the plunge into "Turk Work", verify your age below.</p>
+                    <label for="birthday" class="col-sm-6 text-center fs-3 fw-bold">Select your birthday</label>
+                    <input type="date" name="birthday" id="birthday" class="birthDate col-sm-5">
+                    <img src="./Media/Shinra_Electric_Power_Company_logo_from_Final_Fantasy_VII_Remake.webp" alt="Shinra Power Company logo" class="shinraLogo d-block d-sm-block col-sm-5 mt-5 mb-3 mx-auto d-block" >
+                </div>
+                
+                <!-- Turk Images -->
+                <article class="d-none d-sm-block col-sm-6">
+                    <div class=""> 
+                        <img src="./Media/Tseng.png" alt="" class="turkFour" width="380" height="380">
+                    </div>
+                    <div class=""> 
+                        <img src="./Media/Elena.png" alt="" class="turkThree" width="380" height="380">
+                    </div>
+                    <div class="">
+                        <img src="./Media/Rude.png"  alt="" class="turkTwo" width="380" height="380">
+                    </div>
+                    <div class=""> 
+                        <img src="./Media/Reno.png" alt="" class="turkOne">
+                    </div>
+                </article>
+            </div>
+            
+        </section>
+
     </main>
-    <script src="./JS/app.js"></script>
-    <footer>
-        SHINRA POWER COMPANY©️ &copy; SQUARE ENIX || All Rights Reserved.;
+    <footer class="bottomFoot text-center pt-3 pb-3">
+        SHINRA ELECTRIC POWER COMPANY&copy; SQUARE ENIX || All Rights Reserved.
     </footer>
+    <script src="./JS/app.js"></script>
 </body>
 </html>

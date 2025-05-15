@@ -1,58 +1,100 @@
+
+
+ul {
+    list-style-type: none;
+    background-color: black;
+    color: white;
+    width: 100%;
+}
+
+/* .signUp { */
+    /* color: white; */
+    /* background-color: black; */
+/* } */
+
 .turkOne {
-    background-repeat: no-repeat;
     position: absolute;
-    top: 27%;
-    left: 68%;
-    animation-name: fadeIn;
-    opacity: 0;
-    /* display: none; */
-    animation: fadeIn 2s ease-in forwards;
-    animation-name: fadeOut;
-    transition: opacity 2s ease-out forwards;
-    
+   width: 705px;
+    height: 666px;
+    max-width: 50vw;
+    animation-name: fadeIn,fadeOut;
+    animation-duration: 5s,3s;
+    animation-fill-mode: forwards, infinite;
+    z-index: 4;
 }
 
-
-@keyframes fadeIn {
-   0% {
-    opacity: 0;
-    /* display: none; */
-    }
-
-   100% {
-    opacity: 1;
-    /* display: block; */
-    }
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-        /* display: block; */
-        }
-    100% {
-        opacity: 0;
-        /* display: none; */
-        }
-}
 
 .turkTwo {
-    background-repeat: no-repeat;
     position: absolute;
-    top: 25%;
-    left: 66%;
+    width: 705px;
+    height: 666px;
+    max-width: 50vw;
+    animation-name: fadeIn,fadeOut;
+    animation-duration: 6s,6s;
+    animation-fill-mode: forwards infinite;
+    z-index: 3;
 }
 
 .turkThree {
-    background-repeat: no-repeat;
     position: absolute;
-    top: 23%;
-    left: 65%;
+    width: 705px;
+    height: 666px;
+    max-width: 50vw;
+    animation-name: fadeIn,fadeOut;
+    animation-duration: 9s,9s;
+    animation-fill-mode: forwards infinite;
+    z-index: 2;
 }
 
 .turkFour {
-    background-repeat: no-repeat;
     position: absolute;
-    top: 27%;
-    left: 65%;
+    width: 705px;
+    height: 666px;
+    animation-name: fadeIn,fadeOut;
+    animation-duration: 12s,12s;
+    animation-fill-mode: forwards infinite;
+    z-index: 1;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+
+.bottomFoot {
+    color: white;
+    background-color: black;
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 99;
+}
+
+
+@media only screen and (max-width: 575px) {
+    html {
+        background-color: black;
+    }
+    
+    body {
+        background-image: none;
+    }
+    
+    ul {
+        list-style-type: none;
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+    
+    .shinraLogo {
+        width: 100%;
+        height: auto;
+    }
 }
