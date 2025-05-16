@@ -6,52 +6,65 @@
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="shortcut icon" href="./Media/Shinra_Electric_Power_Company_logo_from_Final_Fantasy_VII_Remake.webp" type="image/x-icon">
     <title>Recruiting Now</title>
 </head>
 <body>
-    <header class="">
-        <nav class="">
+    <header class="banner">
+        <nav class="" role="navigation">
             <ul class="d-flex flex-wrap d-block p-3 m-0 text-center fs-3 fw-bold">
-                <li class="col-4">Home</li>
-                <li class="col-4">About</li>
-                <li class="col-4">Contact</li>
+                <li class="col-4"><a href="#">Home</a></li>
+                <li class="col-4"><a href="#">About</a></li>
+                <li class="col-4"><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
+    <main role="main">
         <section class="turkSection">
             <div class="d-flex">
-                <div class="signUp d-flex flex-wrap">
-                    <h1 class="title col-12 col-sm-12 text-center">Do you have what it takes to join the Turks?</h1>
+                <div class="d-flex flex-wrap">
+                    <h1 class="title col-12 col-sm-12 text-center mt-3">Do you have what it takes to join the Turks?</h1>
                     <p class="promo col-12 col-sm-12 text-center">"A special Shinra task force often saddled with atypical assignments, such as scouting for SOLDIER recruits, escorting important individuals, spy work and assassination. The Turks keep to the company's ever-growing shadow, performing deeds best kept out of the public eye." If you are truly ready to take the plunge into "Turk Work", verify your age below.</p>
-                    <label for="birthday" class="col-sm-6 text-center fs-3 fw-bold">Select your birthday</label>
-                    <input type="date" name="birthday" id="birthday" class="birthDate col-sm-5">
-                    <img src="./Media/Shinra_Electric_Power_Company_logo_from_Final_Fantasy_VII_Remake.webp" alt="Shinra Power Company logo" class="shinraLogo d-block d-sm-block col-sm-5 mt-5 mb-3 mx-auto d-block" >
+                   
+                        <label for="birthday" class="col-12 col-sm-5 text-center fs-3 fw-bold mt-3">Select your birthday</label>
+                            <input type="date" name="birthday" id="birthday" class="birthDate col-6 col-sm-5 mt-3" onclick="autoPlay()">
+                            <button type="submit" class=" ms-auto birthdayButton mt-3" id="birthdayButton" onclick="verifyAge()">Validate</button>
+                        <p id="joined" class="specialMessage fw-bold fst-italic mt-3 mb-0 col-sm-12 text-center ms-auto"></p>
+                                          
+                    <img src="./Media/Shinra_Electric_Power_Company_logo_from_Final_Fantasy_VII_Remake.webp" alt="Shinra Power Company logo" class="shinraLogo d-block d-sm-block col-sm-5 mt-3  mx-auto float-end" >
                 </div>
                 
-                <!-- Turk Images -->
-                <article class="d-none d-sm-block col-sm-6">
-                    <div class=""> 
-                        <img src="./Media/Tseng.png" alt="" class="turkFour" width="380" height="380">
+                <!-- Turk Rotating Images -->
+                 <div class="wrapper d-none d-sm-block col-sm-6">
+                    <div class="gallery">
+                        <img src="./Media/placeholder cloud.webp" alt="Cloud Strife" class="cloud" style="width:100%; opacity: 0;"/>
                     </div>
-                    <div class=""> 
-                        <img src="./Media/Elena.png" alt="" class="turkThree" width="380" height="380">
-                    </div>
-                    <div class="">
-                        <img src="./Media/Rude.png"  alt="" class="turkTwo" width="380" height="380">
-                    </div>
-                    <div class=""> 
-                        <img src="./Media/Reno.png" alt="" class="turkOne">
-                    </div>
-                </article>
-            </div>
-            
+                 </div>
+            </div>          
         </section>
-
     </main>
+
     <footer class="bottomFoot text-center pt-3 pb-3">
-        SHINRA ELECTRIC POWER COMPANY&copy; SQUARE ENIX || All Rights Reserved.
+        <div class="d-flex justify-content-evenly">
+            <div class="buttonColor col-sm-1">
+                <div class="d-flex">
+                    <h4 class="fw-bolder" onclick="stopPlay()">
+                        <a href="#" class="pause">
+                            ||
+                        </a>
+                    </h4>
+
+                    <marquee behavior="scroll" direction="right" scrollamount="1" >Turk's Theme</marquee>
+                </div>
+                <audio controls id="music" hidden="hidden">
+                    <source src="./Media/113 Turks' Theme.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <h4 class="companyFoot"> <strong>S</strong>HINRA <strong>E</strong>LECTRIC POWER <strong>C</strong>OMPANY &copy; <strong class="copyright">SQUARE ENIX || All Rights Reserved.</strong> </h4>
+        </div>
     </footer>
+
     <script src="./JS/app.js"></script>
 </body>
 </html>

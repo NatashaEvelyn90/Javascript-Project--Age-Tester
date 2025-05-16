@@ -1,4 +1,4 @@
-
+/* Header */
 
 ul {
     list-style-type: none;
@@ -7,65 +7,47 @@ ul {
     width: 100%;
 }
 
-/* .signUp { */
-    /* color: white; */
-    /* background-color: black; */
-/* } */
+li a{
+    text-decoration: none;
+    color: white;
+}
 
-.turkOne {
-    position: absolute;
-   width: 705px;
-    height: 666px;
-    max-width: 50vw;
-    animation-name: fadeIn,fadeOut;
-    animation-duration: 5s,3s;
-    animation-fill-mode: forwards, infinite;
-    z-index: 4;
+/* Turks Gallery */
+/* Characters of Final Fantasy VII */
+
+.gallery {
+    animation: turksIn 30s cubic-bezier(0.8, 0.8, 0.8, 0.8) infinite;
+}
+
+@keyframes turksIn {
+   0% {background: url("../Media/Reno.png");background-repeat: no-repeat; background-size: contain; width: 666px; height: 666px;}
+  25% {background: url("../Media/Rude.png");background-repeat: no-repeat; background-size: contain; width: 666px; height: 666px;} 
+  50% {background: url("../Media/Elena.png");background-repeat: no-repeat; background-size: contain; width: 675px; height: 666px;}
+  75% {background: url("../Media/Tseng.png");background-repeat: no-repeat;  background-size: contain; width: 702px; height: 666px;}
+  100% {background: url("../Media/Reno.png"); background-repeat: no-repeat; background-size: contain; width: 666px; height: 666px;} 
+  
 }
 
 
-.turkTwo {
-    position: absolute;
-    width: 705px;
-    height: 666px;
-    max-width: 50vw;
-    animation-name: fadeIn,fadeOut;
-    animation-duration: 6s,6s;
-    animation-fill-mode: forwards infinite;
-    z-index: 3;
+.birthdayButton {
+    background-color:rgba(0, 0, 0, 0.553);
+    color: gold;
+    border: 5px solid black;
 }
 
-.turkThree {
-    position: absolute;
-    width: 705px;
-    height: 666px;
-    max-width: 50vw;
-    animation-name: fadeIn,fadeOut;
-    animation-duration: 9s,9s;
-    animation-fill-mode: forwards infinite;
-    z-index: 2;
+.birthdayColors {
+    background-color: black;
 }
 
-.turkFour {
-    position: absolute;
-    width: 705px;
-    height: 666px;
-    animation-name: fadeIn,fadeOut;
-    animation-duration: 12s,12s;
-    animation-fill-mode: forwards infinite;
-    z-index: 1;
+/* Footer begins */
+
+.pause {
+    color: red;
 }
 
-@keyframes fadeIn {
-    from {opacity: 0;}
-    to {opacity: 1;}
+strong {
+    color: gold;
 }
-
-@keyframes fadeOut {
-    from {opacity: 1;}
-    to {opacity: 0;}
-}
-
 
 .bottomFoot {
     color: white;
@@ -74,6 +56,15 @@ ul {
     height: auto;
     position: relative;
     z-index: 99;
+    
+}
+
+.companyFoot {
+    color: rgb(236, 121, 79);
+}
+
+.copyright {
+    color: white;
 }
 
 
