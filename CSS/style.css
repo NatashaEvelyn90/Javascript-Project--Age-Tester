@@ -20,12 +20,11 @@ li a{
 }
 
 @keyframes turksIn {
-   0% {background: url("../Media/Reno.png");background-repeat: no-repeat; background-size: contain; width: 666px; height: 666px;}
-  25% {background: url("../Media/Rude.png");background-repeat: no-repeat; background-size: contain; width: 666px; height: 666px;} 
-  50% {background: url("../Media/Elena.png");background-repeat: no-repeat; background-size: contain; width: 675px; height: 666px;}
-  75% {background: url("../Media/Tseng.png");background-repeat: no-repeat;  background-size: contain; width: 702px; height: 666px;}
-  100% {background: url("../Media/Reno.png"); background-repeat: no-repeat; background-size: contain; width: 666px; height: 666px;} 
-  
+    0% {background: url("../Media/Reno.png");background-repeat: no-repeat; background-size: contain; width: 666px; height: 666px;}
+    25% {background: url("../Media/Rude.png");background-repeat: no-repeat; background-size: contain; width: 666px; height: 666px;} 
+    50% {background: url("../Media/Elena.png");background-repeat: no-repeat; background-size: contain; width: 675px; height: 666px;}
+    75% {background: url("../Media/Tseng.png");background-repeat: no-repeat;  background-size: contain; width: 702px; height: 666px;}
+    100% {background: url("../Media/Reno.png"); background-repeat: no-repeat; background-size: contain; width: 666px; height: 666px;} 
 }
 
 
